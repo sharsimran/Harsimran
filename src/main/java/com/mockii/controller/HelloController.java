@@ -11,7 +11,7 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        return "Greetings from Mockii!";
+        return "Greetings from Mockii! This is the first app";
     }
 
 }
