@@ -29,6 +29,7 @@ public class Application {
     public static void main(String[] args) throws Exception{
 
         String fixieUrl = System.getenv("FIXIE_URL");
+        int port = Integer.parseInt(System.getenv("PORT"));
 
         String[] fixieValues = fixieUrl.split("[/(:\\/@)/]+");
         String fixieUser = fixieValues[1];
@@ -48,7 +49,7 @@ public class Application {
                     .setProxy(proxy)
                     .build();
 
-            HttpHost target = new HttpHost("http://mockii.herokuapp.com", 80, "http");
+            HttpHost target = new HttpHost("mockii.herokuapp.com", port, "http");
             HttpGet httpget = new HttpGet("/");
             httpget.setConfig(config);
 
