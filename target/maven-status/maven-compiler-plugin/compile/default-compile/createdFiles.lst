@@ -1,4 +1,5 @@
 com/mockii/controller/TopicController.class
 com/mockii/Application.class
 com/mockii/entity/Topic.class
+com/mockii/swagger/SwaggerConfig.class
 com/mockii/dao/TopicDAO.class

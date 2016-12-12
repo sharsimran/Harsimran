@@ -6,6 +6,7 @@ package com.mockii.controller;
 import com.mockii.dao.TopicDAO;
 import com.mockii.entity.Topic;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,12 +16,12 @@ import java.util.Date;
 @RestController
 public class TopicController {
 
-    @RequestMapping("/")
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index() {
         return "Greetings from Mockii! This is the first app";
     }
 
-    @RequestMapping("/create")
+    @RequestMapping(value = "/create", method = RequestMethod.POST)
     @ResponseBody
     public String create(String name) {
         Topic topic = null;
@@ -36,7 +37,7 @@ public class TopicController {
         return "Topic successfully created! (id = " + topic.getTopicId() + ")";
     }
 
-    @RequestMapping("/findById")
+    @RequestMapping(value = "/findById", method = RequestMethod.GET)
     @ResponseBody
     public String findById(int id) {
         Topic topic = null;
@@ -49,7 +50,7 @@ public class TopicController {
         return "Topic found! (topic = " + topic.toString() + ")";
     }
 
-    @RequestMapping("/delete")
+    @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
     @ResponseBody
     public String delete(int id) {
         Topic topic = null;
