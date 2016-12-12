@@ -2,26 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="341a9ae0-e878-4ba8-8461-43133ce0e320" name="Default" comment="Converted to war">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/controller/UserProfileController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/dao/UserProfileDAO.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/Feedback.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/Interviews.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/JobProfile.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/Membership.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/OccupationTechnology.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/Occupations.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/Skillset.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/SubjectTopic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/Technologies.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/TechnologySubject.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/UserProfile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mockii/controller/TopicController.class" afterPath="$PROJECT_DIR$/target/classes/com/mockii/controller/TopicController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/mockii/entity/Topic.class" afterPath="$PROJECT_DIR$/target/classes/com/mockii/entity/Topic.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gs-spring-boot-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/gs-spring-boot-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gs-spring-boot-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/gs-spring-boot-1.0-SNAPSHOT.jar.original" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mockii/controller/TopicController.java" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/controller/TopicController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mockii/entity/Topic.java" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/entity/Topic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
@@ -921,7 +906,7 @@
       <workItem from="1480868398196" duration="1291000" />
       <workItem from="1480872428434" duration="19583000" />
       <workItem from="1481418628348" duration="733000" />
-      <workItem from="1481467200077" duration="6967000" />
+      <workItem from="1481467200077" duration="7018000" />
     </task>
     <task id="LOCAL-00001" summary="Converted to war">
       <created>1480805188676</created>
@@ -930,11 +915,18 @@
       <option name="project" value="LOCAL" />
       <updated>1480805188676</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="entities">
+      <created>1481520078324</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1481520078324</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33076000" />
+    <option name="totallyTimeSpent" value="33127000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1035,7 +1027,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Converted to war" />
-    <option name="LAST_COMMIT_MESSAGE" value="Converted to war" />
+    <MESSAGE value="entities" />
+    <option name="LAST_COMMIT_MESSAGE" value="entities" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
