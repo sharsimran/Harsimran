@@ -3468,7 +3468,7 @@ TOPIC_ID</ColNames>
     </column>
     <column id="775" parent="76" name="TECHNOLOGY">
       <Position>2</Position>
-      <DataType>varchar(45)|0</DataType>
+      <DataType>varchar(1000)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
     </column>
