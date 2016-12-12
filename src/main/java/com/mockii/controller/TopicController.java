@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.Date;
+import java.util.List;
 
 @RestController
 public class TopicController {
@@ -37,6 +38,19 @@ public class TopicController {
         return "Topic successfully created! (id = " + topic.getTopicId() + ")";
     }
 
+    @RequestMapping(value = "/findAllTopics", method = RequestMethod.GET)
+    @ResponseBody
+    public List<Topic> findAllTopics(){
+        List<Topic> topics;
+        try {
+            topics = (List<Topic>) topicDAO.findAll();
+        }
+        catch (Exception ex) {
+            throw new RuntimeException("Error topic: " + ex.toString());
+        }
+        return topics;
+    }
+
     @RequestMapping(value = "/findById", method = RequestMethod.GET)
     @ResponseBody
     public String findById(int id) {
@@ -47,7 +61,7 @@ public class TopicController {
         catch (Exception ex) {
             return "Error topic: " + ex.toString();
         }
-        return "Topic found! (topic = " + topic.toString() + ")";
+        return topic.toString();
     }
 
     @RequestMapping(value = "/delete", method = RequestMethod.DELETE)
