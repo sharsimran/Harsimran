@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="341a9ae0-e878-4ba8-8461-43133ce0e320" name="Default" comment="Converted to war">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ReadMe.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gs-spring-boot-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/gs-spring-boot-1.0-SNAPSHOT.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/gs-spring-boot-1.0-SNAPSHOT.jar.original" afterPath="$PROJECT_DIR$/target/gs-spring-boot-1.0-SNAPSHOT.jar.original" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/31b617e2-d3f4-46ae-996f-6ad380bd0d16.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/31b617e2-d3f4-46ae-996f-6ad380bd0d16.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_google_appengine_appengine_api_1_0_sdk_Release.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_appengine_appengine_api_1_0_sdk_Release.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_google_appengine_appengine_endpoints_Release.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_appengine_appengine_endpoints_Release.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_googlecode_objectify_objectify_Release.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_googlecode_objectify_objectify_Release.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hello_World.iml" afterPath="$PROJECT_DIR$/Hello_World.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mockii/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/mockii/Application.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/application.properties" afterPath="$PROJECT_DIR$/target/classes/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-    </list>
+    <list default="true" id="341a9ae0-e878-4ba8-8461-43133ce0e320" name="Default" comment="Converted to war" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,7 +62,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MOCKII.TOPIC" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MOCKII.TOPIC" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/9b780108/cf44f881-298a-4ccc-bb04-74b632773bdf/MOCKII.TOPIC">
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -91,6 +73,16 @@
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Procfile" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Procfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -780,7 +772,7 @@
       <workItem from="1480868398196" duration="1291000" />
       <workItem from="1480872428434" duration="19583000" />
       <workItem from="1481418628348" duration="733000" />
-      <workItem from="1481467200077" duration="1787000" />
+      <workItem from="1481467200077" duration="2005000" />
     </task>
     <task id="LOCAL-00001" summary="Converted to war">
       <created>1480805188676</created>
@@ -793,7 +785,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27896000" />
+    <option name="totallyTimeSpent" value="28114000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -806,7 +798,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -822,7 +814,7 @@
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21888413" sideWeight="0.4083916" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22460657" sideWeight="0.5916084" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22460657" sideWeight="0.5916084" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21888413" sideWeight="0.5060449" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22460657" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1345,14 +1337,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/9b780108/cf44f881-298a-4ccc-bb04-74b632773bdf/MOCKII.TOPIC">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1363,6 +1347,14 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
