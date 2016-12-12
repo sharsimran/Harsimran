@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mockii@mockii.cpl0gzrliq2k.us-west-2.rds.amazonaws.com">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mockii">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="information_schema"/>
+    <schema id="4" parent="1" name="innodb"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="sys"/>
+    <schema id="8" parent="1" name="MOCKII">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="9" parent="8" name="FEEDBACK"/>
+    <table id="10" parent="8" name="INTERVIEWS"/>
+    <table id="11" parent="8" name="JOB_PROFILE"/>
+    <table id="12" parent="8" name="MEMBERSHIP"/>
+    <table id="13" parent="8" name="OCCUPATIONS"/>
+    <table id="14" parent="8" name="OCCUPATION_TECHNOLOGY"/>
+    <table id="15" parent="8" name="SKILLSET"/>
+    <table id="16" parent="8" name="SUBJECT_TOPIC"/>
+    <table id="17" parent="8" name="TECHNOLOGIES"/>
+    <table id="18" parent="8" name="TECHNOLOGY_SUBJECT"/>
+    <table id="19" parent="8" name="TOPIC"/>
+    <table id="20" parent="8" name="USER_PROFILE"/>
+    <column id="21" parent="9" name="FEEDBACK_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="9" name="INTERVIEW_ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="23" parent="9" name="RATING">
+      <Position>3</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="24" parent="9" name="FEEDBACK">
+      <Position>4</Position>
+      <DataType>varchar(1000)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="25" parent="9" name="SUBJECT_TOPIC_ID">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="9" name="CREATED_DATE">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="9" name="UPDATED_DATE">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="28" parent="9" name="INTERVIEW_ID">
+      <ColNames>INTERVIEW_ID</ColNames>
+    </index>
+    <index id="29" parent="9" name="SUBJECT_TOPIC_ID">
+      <ColNames>SUBJECT_TOPIC_ID</ColNames>
+    </index>
+    <index id="30" parent="9" name="TOPIC_ID">
+      <ColNames>SUBJECT_TOPIC_ID</ColNames>
+    </index>
+    <foreign-key id="31" parent="9" name="FEEDBACK_ibfk_1">
+      <ColNames>INTERVIEW_ID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>INTERVIEWS</RefTableName>
+      <RefColNames>INTERVIEW_ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="32" parent="9" name="FEEDBACK_ibfk_2">
+      <ColNames>SUBJECT_TOPIC_ID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>SUBJECT_TOPIC</RefTableName>
+      <RefColNames>SUBJECT_TOPIC_ID</RefColNames>
+    </foreign-key>
+    <column id="33" parent="10" name="INTERVIEW_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="34" parent="10" name="INTERVIEW_DATE">
+      <Position>2</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="10" name="INTERVIEWEE_ID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="36" parent="10" name="INTERVIEWER_ID">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="10" name="OVERALL_INTERVIEWER_RATING">
+      <Position>5</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="38" parent="10" name="OVERALL_INTERVIEWEE_RATING">
+      <Position>6</Position>
+      <DataType>varchar(10)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="10" name="CREATED_DATE">
+      <Position>7</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="40" parent="10" name="UPDATED_DATE">
+      <Position>8</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="41" parent="10" name="INTERVIEWEE_ID">
+      <ColNames>INTERVIEWEE_ID</ColNames>
+    </index>
+    <index id="42" parent="10" name="INTERVIEWER_ID">
+      <ColNames>INTERVIEWER_ID</ColNames>
+    </index>
+    <index id="43" parent="10" name="INTERVIEW_ID_UNIQUE">
+      <ColNames>INTERVIEW_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="44" parent="10" name="PRIMARY">
+      <ColNames>INTERVIEW_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="45" parent="10" name="INTERVIEW_ID_UNIQUE">
+      <ColNames>INTERVIEW_ID</ColNames>
+      <UnderlyingIndexName>INTERVIEW_ID_UNIQUE</UnderlyingIndexName>
+    </key>
+    <foreign-key id="46" parent="10" name="INTERVIEWS_ibfk_1">
+      <ColNames>INTERVIEWEE_ID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>USER_PROFILE</RefTableName>
+      <RefColNames>USERID</RefColNames>
+    </foreign-key>
+    <foreign-key id="47" parent="10" name="INTERVIEWS_ibfk_2">
+      <ColNames>INTERVIEWER_ID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>USER_PROFILE</RefTableName>
+      <RefColNames>USERID</RefColNames>
+    </foreign-key>
+    <column id="48" parent="11" name="USERID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="11" name="CURRENT_TITLE">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="50" parent="11" name="JOB_PROFILE_ID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="51" parent="11" name="CREATED_DATE">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="52" parent="11" name="UPDATED_DATE">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="53" parent="11" name="JOB_PROFILE_ID_UNIQUE">
+      <ColNames>JOB_PROFILE_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="54" parent="11" name="USER_ID_FK_idx">
+      <ColNames>USERID</ColNames>
+    </index>
+    <key id="55" parent="11" name="PRIMARY">
+      <ColNames>JOB_PROFILE_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="56" parent="11" name="JOB_PROFILE_ID_UNIQUE">
+      <ColNames>JOB_PROFILE_ID</ColNames>
+      <UnderlyingIndexName>JOB_PROFILE_ID_UNIQUE</UnderlyingIndexName>
+    </key>
+    <foreign-key id="57" parent="11" name="JOB_PROFILE_ibfk_1">
+      <ColNames>USERID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>USER_PROFILE</RefTableName>
+      <RefColNames>USERID</RefColNames>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="58" parent="12" name="USERID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="12" name="ACCOUNT_TYPE">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="60" parent="12" name="ACTIVE">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="12" name="MEMBERSHIP_ID">
+      <Position>4</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="62" parent="12" name="CREATED_DATE">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="12" name="UPDATED_DATE">
+      <Position>6</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="64" parent="12" name="MEMBERSHIP_ID_FK_idx">
+      <ColNames>USERID</ColNames>
+    </index>
+    <index id="65" parent="12" name="MEMBERSHIP_ID_UNIQUE">
+      <ColNames>MEMBERSHIP_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="66" parent="12" name="PRIMARY">
+      <ColNames>MEMBERSHIP_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="67" parent="12" name="MEMBERSHIP_ID_UNIQUE">
+      <ColNames>MEMBERSHIP_ID</ColNames>
+      <UnderlyingIndexName>MEMBERSHIP_ID_UNIQUE</UnderlyingIndexName>
+    </key>
+    <foreign-key id="68" parent="12" name="MEMBERSHIP_ibfk_1">
+      <ColNames>USERID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>USER_PROFILE</RefTableName>
+      <RefColNames>USERID</RefColNames>
+      <OnDelete>delete</OnDelete>
+    </foreign-key>
+    <column id="69" parent="13" name="OCCUPATION">
+      <Position>1</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="70" parent="13" name="OCCUPATION_ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="71" parent="13" name="CREATED_DATE">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="72" parent="13" name="UPDATED_DATE">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="73" parent="13" name="OCCUPATION_ID_UNIQUE">
+      <ColNames>OCCUPATION_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="74" parent="13" name="PRIMARY">
+      <ColNames>OCCUPATION_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="75" parent="13" name="OCCUPATION_ID_UNIQUE">
+      <ColNames>OCCUPATION_ID</ColNames>
+      <UnderlyingIndexName>OCCUPATION_ID_UNIQUE</UnderlyingIndexName>
+    </key>
+    <column id="76" parent="14" name="OCCUPATION_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="14" name="TECHNOLOGY_ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="78" parent="14" name="OCC_TECH_ID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <index id="79" parent="14" name="OCCUPATION_ID">
+      <ColNames>OCCUPATION_ID</ColNames>
+    </index>
+    <index id="80" parent="14" name="OCCUPATION_TECHNOLOGY_UQ_INDEX">
+      <ColNames>OCCUPATION_ID
+TECHNOLOGY_ID</ColNames>
+    </index>
+    <index id="81" parent="14" name="TECHNOLOGY_ID">
+      <ColNames>TECHNOLOGY_ID</ColNames>
+    </index>
+    <key id="82" parent="14" name="PRIMARY">
+      <ColNames>OCC_TECH_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="83" parent="14" name="OCCUPATION_TECHNOLOGY_ibfk_1">
+      <ColNames>OCCUPATION_ID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>OCCUPATIONS</RefTableName>
+      <RefColNames>OCCUPATION_ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="84" parent="14" name="OCCUPATION_TECHNOLOGY_ibfk_2">
+      <ColNames>TECHNOLOGY_ID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>TECHNOLOGIES</RefTableName>
+      <RefColNames>TECHNOLOGY_ID</RefColNames>
+    </foreign-key>
+    <column id="85" parent="15" name="SKILL_SET_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="86" parent="15" name="INTERVIEW_ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="87" parent="15" name="SUBJECT_TOPIC_ID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="88" parent="15" name="CREATED_DATE">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="15" name="UPDATED_DATE">
+      <Position>5</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="90" parent="15" name="INTERVIEW_ID">
+      <ColNames>INTERVIEW_ID</ColNames>
+    </index>
+    <index id="91" parent="15" name="SUBJECT_TOPIC_ID">
+      <ColNames>SUBJECT_TOPIC_ID</ColNames>
+    </index>
+    <index id="92" parent="15" name="TOPIC_ID">
+      <ColNames>SUBJECT_TOPIC_ID</ColNames>
+    </index>
+    <foreign-key id="93" parent="15" name="SKILLSET_ibfk_1">
+      <ColNames>INTERVIEW_ID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>INTERVIEWS</RefTableName>
+      <RefColNames>INTERVIEW_ID</RefColNames>
+    </foreign-key>
+    <foreign-key id="94" parent="15" name="SKILLSET_ibfk_2">
+      <ColNames>SUBJECT_TOPIC_ID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>SUBJECT_TOPIC</RefTableName>
+      <RefColNames>SUBJECT_TOPIC_ID</RefColNames>
+    </foreign-key>
+    <column id="95" parent="16" name="SUBJECT_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="96" parent="16" name="TOPIC_ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="97" parent="16" name="SUBJECT_TOPIC_ID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <index id="98" parent="16" name="SUBJECT_ID">
+      <ColNames>SUBJECT_ID</ColNames>
+    </index>
+    <index id="99" parent="16" name="SUBJECT_TOPIC_UQ_INDEX">
+      <ColNames>SUBJECT_ID
+TOPIC_ID</ColNames>
+    </index>
+    <index id="100" parent="16" name="TOPIC_ID">
+      <ColNames>TOPIC_ID</ColNames>
+    </index>
+    <key id="101" parent="16" name="PRIMARY">
+      <ColNames>SUBJECT_TOPIC_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="102" parent="16" name="SUBJECT_TOPIC_ibfk_1">
+      <ColNames>TOPIC_ID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>TOPIC</RefTableName>
+      <RefColNames>TOPIC_ID</RefColNames>
+    </foreign-key>
+    <column id="103" parent="17" name="TECHNOLOGY_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="104" parent="17" name="TECHNOLOGY">
+      <Position>2</Position>
+      <DataType>varchar(1000)|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="105" parent="17" name="CREATED_DATE">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="106" parent="17" name="UPDATED_DATE">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="107" parent="17" name="TECHNOLOGY_ID_UNIQUE">
+      <ColNames>TECHNOLOGY_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="108" parent="17" name="PRIMARY">
+      <ColNames>TECHNOLOGY_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="109" parent="17" name="TECHNOLOGY_ID_UNIQUE">
+      <ColNames>TECHNOLOGY_ID</ColNames>
+      <UnderlyingIndexName>TECHNOLOGY_ID_UNIQUE</UnderlyingIndexName>
+    </key>
+    <column id="110" parent="18" name="TECHNOLOGY_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="111" parent="18" name="SUBJECT_ID">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="112" parent="18" name="TECHS_SUBS_ID">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <index id="113" parent="18" name="TECHNOLOGY_ID">
+      <ColNames>TECHNOLOGY_ID</ColNames>
+    </index>
+    <index id="114" parent="18" name="SUBJECT_ID">
+      <ColNames>SUBJECT_ID</ColNames>
+    </index>
+    <index id="115" parent="18" name="TECHNOLOGY_SUBJECT_UQ_INDEX">
+      <ColNames>TECHNOLOGY_ID
+SUBJECT_ID</ColNames>
+    </index>
+    <key id="116" parent="18" name="PRIMARY">
+      <ColNames>TECHS_SUBS_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="117" parent="18" name="TECHNOLOGY_SUBJECT_ibfk_1">
+      <ColNames>TECHNOLOGY_ID</ColNames>
+      <RefSchemaName>MOCKII</RefSchemaName>
+      <RefTableName>TECHNOLOGIES</RefTableName>
+      <RefColNames>TECHNOLOGY_ID</RefColNames>
+    </foreign-key>
+    <column id="118" parent="19" name="TOPIC_ID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="119" parent="19" name="TOPIC">
+      <Position>2</Position>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="120" parent="19" name="CREATED_DATE">
+      <Position>3</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="121" parent="19" name="UPDATED_DATE">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="122" parent="19" name="TOPIC_ID">
+      <ColNames>TOPIC_ID</ColNames>
+    </index>
+    <index id="123" parent="19" name="TOPIC_ID_UNIQUE">
+      <ColNames>TOPIC_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="124" parent="19" name="UPDATED_DATE_UNIQUE">
+      <ColNames>UPDATED_DATE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="125" parent="19" name="PRIMARY">
+      <ColNames>TOPIC_ID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="126" parent="19" name="TOPIC_ID_UNIQUE">
+      <ColNames>TOPIC_ID</ColNames>
+      <UnderlyingIndexName>TOPIC_ID_UNIQUE</UnderlyingIndexName>
+    </key>
+    <key id="127" parent="19" name="UPDATED_DATE_UNIQUE">
+      <ColNames>UPDATED_DATE</ColNames>
+      <UnderlyingIndexName>UPDATED_DATE_UNIQUE</UnderlyingIndexName>
+    </key>
+    <column id="128" parent="20" name="USERID">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="129" parent="20" name="FIRSTNAME">
+      <Position>2</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="130" parent="20" name="MIDDLENAME">
+      <Position>3</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="131" parent="20" name="LASTNAME">
+      <Position>4</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="132" parent="20" name="EMAILID">
+      <Position>5</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="133" parent="20" name="PHONENUMBER">
+      <Position>6</Position>
+      <DataType>varchar(45)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="134" parent="20" name="LASTACCESSED">
+      <Position>7</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="135" parent="20" name="DOB">
+      <Position>8</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="136" parent="20" name="ACCOUNTTYPE">
+      <Position>9</Position>
+      <DataType>varchar(45)|0</DataType>
+    </column>
+    <column id="137" parent="20" name="CREATED_DATE">
+      <Position>10</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <column id="138" parent="20" name="UPDATED_DATE">
+      <Position>11</Position>
+      <DataType>datetime|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    </column>
+    <index id="139" parent="20" name="id_UNIQUE">
+      <ColNames>USERID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="140" parent="20" name="PRIMARY">
+      <ColNames>USERID</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="141" parent="20" name="id_UNIQUE">
+      <ColNames>USERID</ColNames>
+      <UnderlyingIndexName>id_UNIQUE</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
