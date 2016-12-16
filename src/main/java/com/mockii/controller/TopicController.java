@@ -17,11 +17,6 @@ import java.util.List;
 @RestController
 public class TopicController {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index() {
-        return "Greetings from Mockii! This is the first app";
-    }
-
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     @ResponseBody
     public String create(String name) {
