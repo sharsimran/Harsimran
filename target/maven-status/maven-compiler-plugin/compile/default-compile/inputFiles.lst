@@ -10,8 +10,10 @@
 /Users/Billa/Documents/Mockii/workspace/Hello_World/src/main/java/com/mockii/entity/TechnologySubject.java
 /Users/Billa/Documents/Mockii/workspace/Hello_World/src/main/java/com/mockii/entity/Feedback.java
 /Users/Billa/Documents/Mockii/workspace/Hello_World/src/main/java/com/mockii/entity/Interviews.java
+/Users/Billa/Documents/Mockii/workspace/Hello_World/src/main/java/com/mockii/dao/OccupationsDAO.java
 /Users/Billa/Documents/Mockii/workspace/Hello_World/src/main/java/com/mockii/dao/UserProfileDAO.java
 /Users/Billa/Documents/Mockii/workspace/Hello_World/src/main/java/com/mockii/entity/UserProfile.java
+/Users/Billa/Documents/Mockii/workspace/Hello_World/src/main/java/com/mockii/controller/OccupationsController.java
 /Users/Billa/Documents/Mockii/workspace/Hello_World/src/main/java/com/mockii/entity/Skillset.java
 /Users/Billa/Documents/Mockii/workspace/Hello_World/src/main/java/com/mockii/controller/UserProfileController.java
 /Users/Billa/Documents/Mockii/workspace/Hello_World/src/main/java/com/mockii/dao/TopicDAO.java

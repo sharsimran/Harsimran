@@ -2,6 +2,7 @@ com/mockii/entity/TechnologySubject.class
 com/mockii/entity/SubjectTopic.class
 com/mockii/Application.class
 com/mockii/entity/OccupationTechnology.class
+com/mockii/dao/OccupationsDAO.class
 com/mockii/entity/Interviews.class
 com/mockii/entity/JobProfile.class
 com/mockii/entity/Technologies.class
@@ -9,6 +10,7 @@ com/mockii/entity/UserProfile.class
 com/mockii/entity/Skillset.class
 com/mockii/controller/TopicController.class
 com/mockii/dao/UserProfileDAO.class
+com/mockii/controller/OccupationsController.class
 com/mockii/controller/UserProfileController.class
 com/mockii/entity/Topic.class
 com/mockii/swagger/SwaggerConfig.class
