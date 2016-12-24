@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.sql.Timestamp;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by Billa on 12/12/16.
@@ -27,7 +28,20 @@ public class UserProfileController {
         catch (Exception ex) {
             return "Error creating the user: " + ex.toString();
         }
-        return "User successfully created! (id = " + user.getUserid() + ")";
+        return "User successfully created! (id = " + user.getUserId() + ")";
+    }
+
+    @RequestMapping(value = "/findAllUsers")
+    public List<UserProfile> findAllUsers(){
+        List<UserProfile> users;
+        try {
+            users = (List<UserProfile>) userProfileDAO.findAll();
+        }
+        catch (Exception ex) {
+            throw new RuntimeException("Error findAllUsers: " + ex.toString());
+        }
+        return users;
+
     }
 
     @Autowired

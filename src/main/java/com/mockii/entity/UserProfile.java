@@ -9,86 +9,86 @@ import java.sql.Timestamp;
 @Entity
 @Table(name = "USER_PROFILE", schema = "MOCKII")
 public class UserProfile {
-    private int userid;
-    private String firstname;
-    private String middlename;
-    private String lastname;
-    private String emailid;
-    private String phonenumber;
-    private String lastaccessed;
+    private int userId;
+    private String firstName;
+    private String middleName;
+    private String lastName;
+    private String emailId;
+    private String phoneNumber;
+    private String lastAccessed;
     private Timestamp dob;
-    private String accounttype;
+    private String accountType;
     private Timestamp createdDate;
     private Timestamp updatedDate;
 
     @Id
-    @Column(name = "USERID")
-    public int getUserid() {
-        return userid;
+    @Column(name = "USER_ID")
+    public int getUserId() {
+        return userId;
     }
 
-    public void setUserid(int userid) {
-        this.userid = userid;
-    }
-
-    @Basic
-    @Column(name = "FIRSTNAME")
-    public String getFirstname() {
-        return firstname;
-    }
-
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     @Basic
-    @Column(name = "MIDDLENAME")
-    public String getMiddlename() {
-        return middlename;
+    @Column(name = "FIRST_NAME")
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setMiddlename(String middlename) {
-        this.middlename = middlename;
-    }
-
-    @Basic
-    @Column(name = "LASTNAME")
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
     @Basic
-    @Column(name = "EMAILID")
-    public String getEmailid() {
-        return emailid;
+    @Column(name = "MIDDLE_NAME")
+    public String getMiddleName() {
+        return middleName;
     }
 
-    public void setEmailid(String emailid) {
-        this.emailid = emailid;
-    }
-
-    @Basic
-    @Column(name = "PHONENUMBER")
-    public String getPhonenumber() {
-        return phonenumber;
-    }
-
-    public void setPhonenumber(String phonenumber) {
-        this.phonenumber = phonenumber;
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
     }
 
     @Basic
-    @Column(name = "LASTACCESSED")
-    public String getLastaccessed() {
-        return lastaccessed;
+    @Column(name = "LAST_NAME")
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastaccessed(String lastaccessed) {
-        this.lastaccessed = lastaccessed;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    @Basic
+    @Column(name = "EMAIL_ID")
+    public String getEmailId() {
+        return emailId;
+    }
+
+    public void setEmailId(String emailId) {
+        this.emailId = emailId;
+    }
+
+    @Basic
+    @Column(name = "PHONE_NUMBER")
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    @Basic
+    @Column(name = "LAST_ACCESSED")
+    public String getLastAccessed() {
+        return lastAccessed;
+    }
+
+    public void setLastAccessed(String lastAccessed) {
+        this.lastAccessed = lastAccessed;
     }
 
     @Basic
@@ -102,13 +102,13 @@ public class UserProfile {
     }
 
     @Basic
-    @Column(name = "ACCOUNTTYPE")
-    public String getAccounttype() {
-        return accounttype;
+    @Column(name = "ACCOUNT_TYPE")
+    public String getAccountType() {
+        return accountType;
     }
 
-    public void setAccounttype(String accounttype) {
-        this.accounttype = accounttype;
+    public void setAccountType(String accountType) {
+        this.accountType = accountType;
     }
 
     @Basic
@@ -138,15 +138,15 @@ public class UserProfile {
 
         UserProfile that = (UserProfile) o;
 
-        if (userid != that.userid) return false;
-        if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
-        if (middlename != null ? !middlename.equals(that.middlename) : that.middlename != null) return false;
-        if (lastname != null ? !lastname.equals(that.lastname) : that.lastname != null) return false;
-        if (emailid != null ? !emailid.equals(that.emailid) : that.emailid != null) return false;
-        if (phonenumber != null ? !phonenumber.equals(that.phonenumber) : that.phonenumber != null) return false;
-        if (lastaccessed != null ? !lastaccessed.equals(that.lastaccessed) : that.lastaccessed != null) return false;
+        if (userId != that.userId) return false;
+        if (firstName != null ? !firstName.equals(that.firstName) : that.firstName != null) return false;
+        if (middleName != null ? !middleName.equals(that.middleName) : that.middleName != null) return false;
+        if (lastName != null ? !lastName.equals(that.lastName) : that.lastName != null) return false;
+        if (emailId != null ? !emailId.equals(that.emailId) : that.emailId != null) return false;
+        if (phoneNumber != null ? !phoneNumber.equals(that.phoneNumber) : that.phoneNumber != null) return false;
+        if (lastAccessed != null ? !lastAccessed.equals(that.lastAccessed) : that.lastAccessed != null) return false;
         if (dob != null ? !dob.equals(that.dob) : that.dob != null) return false;
-        if (accounttype != null ? !accounttype.equals(that.accounttype) : that.accounttype != null) return false;
+        if (accountType != null ? !accountType.equals(that.accountType) : that.accountType != null) return false;
         if (createdDate != null ? !createdDate.equals(that.createdDate) : that.createdDate != null) return false;
         if (updatedDate != null ? !updatedDate.equals(that.updatedDate) : that.updatedDate != null) return false;
 
@@ -155,15 +155,15 @@ public class UserProfile {
 
     @Override
     public int hashCode() {
-        int result = userid;
-        result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
-        result = 31 * result + (middlename != null ? middlename.hashCode() : 0);
-        result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
-        result = 31 * result + (emailid != null ? emailid.hashCode() : 0);
-        result = 31 * result + (phonenumber != null ? phonenumber.hashCode() : 0);
-        result = 31 * result + (lastaccessed != null ? lastaccessed.hashCode() : 0);
+        int result = userId;
+        result = 31 * result + (firstName != null ? firstName.hashCode() : 0);
+        result = 31 * result + (middleName != null ? middleName.hashCode() : 0);
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (emailId != null ? emailId.hashCode() : 0);
+        result = 31 * result + (phoneNumber != null ? phoneNumber.hashCode() : 0);
+        result = 31 * result + (lastAccessed != null ? lastAccessed.hashCode() : 0);
         result = 31 * result + (dob != null ? dob.hashCode() : 0);
-        result = 31 * result + (accounttype != null ? accounttype.hashCode() : 0);
+        result = 31 * result + (accountType != null ? accountType.hashCode() : 0);
         result = 31 * result + (createdDate != null ? createdDate.hashCode() : 0);
         result = 31 * result + (updatedDate != null ? updatedDate.hashCode() : 0);
         return result;
@@ -172,15 +172,15 @@ public class UserProfile {
     @Override
     public String toString() {
         return "UserProfile{" +
-                "userid=" + userid +
-                ", firstname='" + firstname + '\'' +
-                ", middlename='" + middlename + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", emailid='" + emailid + '\'' +
-                ", phonenumber='" + phonenumber + '\'' +
-                ", lastaccessed='" + lastaccessed + '\'' +
+                "userId=" + userId +
+                ", firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", emailId='" + emailId + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", lastAccessed='" + lastAccessed + '\'' +
                 ", dob=" + dob +
-                ", accounttype='" + accounttype + '\'' +
+                ", accountType='" + accountType + '\'' +
                 ", createdDate=" + createdDate +
                 ", updatedDate=" + updatedDate +
                 '}';
