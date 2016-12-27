@@ -3,10 +3,8 @@ package com.mockii.controller;
 import com.mockii.dao.UserProfileDAO;
 import com.mockii.entity.UserProfile;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
 
 import java.sql.Timestamp;
 import java.util.Date;
@@ -17,9 +15,9 @@ import java.util.List;
  */
 @RestController(value = "/user")
 public class UserProfileController {
-    @RequestMapping(value = "/createUser", method = RequestMethod.POST)
+    @RequestMapping(value = "/createUser", consumes = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.POST)
     @ResponseBody
-    public String create(UserProfile user) {
+    public String create(@RequestBody UserProfile user) {
         try {
             user.setCreatedDate(new Timestamp(new Date().getTime()));
             user.setUpdatedDate(new Timestamp(new Date().getTime()));
