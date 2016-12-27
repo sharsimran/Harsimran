@@ -29,7 +29,7 @@ public class UserProfileController {
         return "User successfully created! (id = " + user.getUserId() + ")";
     }
 
-    @RequestMapping(value = "/findAllUsers")
+    @RequestMapping(value = "/findAllUsers", method = RequestMethod.GET)
     public List<UserProfile> findAllUsers(){
         List<UserProfile> users;
         try {
