@@ -2,6 +2,7 @@ package com.mockii.controller;
 
 import com.mockii.dao.OccupationsDAO;
 import com.mockii.entity.Occupations;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -13,7 +14,8 @@ import java.util.List;
 /**
  * Created by Billa on 12/16/16.
  */
-@RestController(value = "/occupations")
+@RestController
+@Api(value = "Occupations API Operations")
 public class OccupationsController {
     @RequestMapping(value = "/findAllOccupations", method = RequestMethod.GET)
     @ResponseBody

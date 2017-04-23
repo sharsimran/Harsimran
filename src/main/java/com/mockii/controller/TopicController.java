@@ -3,15 +3,21 @@ package com.mockii.controller;
 /**
  * Created by Billa on 12/3/16.
  */
+
 import com.mockii.dao.TopicDAO;
 import com.mockii.entity.Topic;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Date;
 import java.util.List;
 
-@RestController(value = "/topic")
+@RestController
+@Api(value = "Topics API Operations")
 public class TopicController {
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)

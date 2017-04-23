@@ -3,7 +3,6 @@ package com.mockii;
 /**
  * Created by Billa on 12/3/16.
  */
-import java.util.Arrays;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,7 +13,9 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
-@SpringBootApplication
+import java.util.Arrays;
+
+@SpringBootApplication(scanBasePackages = {"com.*"})
 @EntityScan(basePackages = "com.mockii.entity")
 public class Application {
 
@@ -37,5 +38,4 @@ public class Application {
             System.out.println(beanName);
         }
     }
-
 }

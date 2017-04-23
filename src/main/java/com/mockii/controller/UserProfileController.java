@@ -2,6 +2,7 @@ package com.mockii.controller;
 
 import com.mockii.dao.UserProfileDAO;
 import com.mockii.entity.UserProfile;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -13,7 +14,8 @@ import java.util.List;
 /**
  * Created by Billa on 12/12/16.
  */
-@RestController(value = "/user")
+@RestController
+@Api(value = "User Profile API Operations.")
 public class UserProfileController {
     @RequestMapping(value = "/createUser", consumes = MediaType.APPLICATION_JSON_VALUE, method = RequestMethod.POST)
     @ResponseBody

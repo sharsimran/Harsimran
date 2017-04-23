@@ -4,10 +4,10 @@ package com.mockii.dao;
  * Created by Billa on 12/4/16.
  */
 
-import javax.transaction.Transactional;
-
 import com.mockii.entity.Topic;
 import org.springframework.data.repository.CrudRepository;
+
+import javax.transaction.Transactional;
 
 @Transactional
 public interface TopicDAO extends CrudRepository<Topic, Long> {

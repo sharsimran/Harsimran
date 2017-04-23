@@ -4,7 +4,6 @@ import com.mockii.entity.Occupations;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;
-import java.util.List;
 
 /**
  * Created by Billa on 12/16/16.
