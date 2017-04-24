@@ -17,6 +17,10 @@ import java.util.List;
 @RestController
 @Api(value = "Occupations API Operations")
 public class OccupationsController {
+
+    @Autowired
+    private OccupationsDAO occupationsDAO;
+
     @RequestMapping(value = "/findAllOccupations", method = RequestMethod.GET)
     @ResponseBody
     public List<Occupations> findAllOccupations(){
@@ -29,8 +33,5 @@ public class OccupationsController {
         }
         return occupations;
     }
-
-    @Autowired
-    private OccupationsDAO occupationsDAO;
 
 }
