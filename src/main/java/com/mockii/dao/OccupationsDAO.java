@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import javax.transaction.Transactional;
 
 /**
- * Created by Billa on 12/16/16.
+ * Created by Chouhan on 12/16/16.
  */
 @Transactional
 public interface OccupationsDAO extends JpaRepository<Occupations, Long> {

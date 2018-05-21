@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>2df9c6eb-584d-4f6e-ad34-0a9e04623995</OriginalElement>
+  <nodes>
+    <node x="1309.1083763569363" y="826.4190732549949">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.TOPIC</node>
+    <node x="57.262186046915986" y="1614.7624242882512">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.MEMBERSHIP</node>
+    <node x="485.60080413476237" y="1282.279698190172">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.INTERVIEWS</node>
+    <node x="760.8284423778363" y="1598.485803616178">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.FEEDBACK</node>
+    <node x="406.0918122742061" y="828.7337908268654">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.OCCUPATIONS</node>
+    <node x="68.24562196418594" y="1167.5224808775936">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.USER_PROFILE</node>
+    <node x="36.22550878550061" y="1011.0082820413653">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.OCCUPATIONS_OCCUPATIONS_CATEGORY</node>
+    <node x="14.330336046481136" y="827.6289635658848">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.OCCUPATIONS_CATEGORY</node>
+    <node x="1190.7834830750555" y="1023.0300530997674">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.SUBJECT_TOPIC</node>
+    <node x="501.9460488366634" y="1008.5986746771889">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.OCCUPATIONS_TECHNOLOGY</node>
+    <node x="896.0674401803743" y="1020.9517273901922">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.TECHNOLOGY_SUBJECT</node>
+    <node x="1024.1128735134175" y="829.0601037471286">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.SUBJECT</node>
+    <node x="-280.02461033516687" y="1252.7832472861273">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.JOB_PROFILE</node>
+    <node x="716.0530055552173" y="823.2096545219616">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.TECHNOLOGIES</node>
+    <node x="1191.493137597017" y="1253.9093715752479">2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.SKILLSET</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.MEMBERSHIP" target="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.USER_PROFILE">
+      <point x="152.0" y="0.0" />
+      <point x="-176.0" y="0.0" />
+    </edge>
+    <edge source="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.INTERVIEWS" target="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.USER_PROFILE">
+      <point x="0.0" y="103.0" />
+      <point x="689.7697582690898" y="1225.1322768729121" />
+      <point x="613.1791298443378" y="1225.1322768729121" />
+      <point x="492.75295839743177" y="1216.214861497634" />
+      <point x="447.5338379846511" y="1215.110034236653" />
+      <point x="0.0" y="-136.0" />
+    </edge>
+    <edge source="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.FEEDBACK" target="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.SUBJECT_TOPIC">
+      <point x="153.5" y="0.0" />
+      <point x="-131.0" y="0.0" />
+    </edge>
+    <edge source="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.FEEDBACK" target="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.INTERVIEWS">
+      <point x="0.0" y="91.5" />
+      <point x="0.0" y="-103.0" />
+    </edge>
+    <edge source="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.JOB_PROFILE" target="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.USER_PROFILE">
+      <point x="0.0" y="-70.0" />
+      <point x="0.0" y="136.0" />
+    </edge>
+    <edge source="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.OCCUPATIONS" target="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.OCCUPATIONS_CATEGORY">
+      <point x="0.0" y="-70.0" />
+      <point x="0.0" y="59.0" />
+    </edge>
+    <edge source="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.SKILLSET" target="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.INTERVIEWS">
+      <point x="-132.5" y="0.0" />
+      <point x="165.5" y="0.0" />
+    </edge>
+    <edge source="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.SKILLSET" target="2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.SUBJECT_TOPIC">
+      <point x="0.0" y="-69.5" />
+      <point x="0.0" y="48.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9051188681860272" x="977.4327980609607" y="1311.5018936686452" />
+  <SelectedNodes>
+    <node>2df9c6eb-584d-4f6e-ad34-0a9e04623995.TABLE:MOCKII.OCCUPATIONS</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Key columns</Category>
+  </Categories>
+</Diagram>
+

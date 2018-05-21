@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 /**
- * Created by Billa on 12/16/16.
+ * Created by Chouhan on 12/16/16.
  */
 @RestController
 @Api(value = "Occupations API Operations")
