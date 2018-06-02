@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/mockii-api-1.0-SNAPSHOT.jar $JAR_OPTS
+web: java -jar target/mockii-api-1.0-SNAPSHOT.jar -Dserver.port=$PORT
