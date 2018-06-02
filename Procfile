@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp target/classes:target/dependency/* mockii
+web: java -jar target/mockii-api-1.0-SNAPSHOT.jar
