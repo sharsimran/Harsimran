@@ -126,8 +126,8 @@ create table TOPIC
   TOPIC_ID     int auto_increment
     primary key,
   TOPIC        varchar(50)                        not null,
-  CREATED_DATE datetime default DATETIME not null,
-  UPDATED_DATE datetime default DATETIME not null,
+  CREATED_DATE datetime default null,
+  UPDATED_DATE datetime default null,
   constraint TOPIC_ID_UNIQUE
   unique (TOPIC_ID),
   constraint UPDATED_DATE_UNIQUE
@@ -150,8 +150,8 @@ create table USER_PROFILE
   LAST_ACCESSED varchar(45)                        null,
   DOB           date                               null,
   ACCOUNT_TYPE  varchar(45)                        null,
-  CREATED_DATE  datetime default DATETIME not null,
-  UPDATED_DATE  datetime default DATETIME not null,
+  CREATED_DATE  datetime default null,
+  UPDATED_DATE  datetime default null,
   constraint id_UNIQUE
   unique (USER_ID)
 )
